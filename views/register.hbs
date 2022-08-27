@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Kstyles=The ultimate shopping website</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="userassets/images/favicon.svg" />
+
+    <link rel="stylesheet" href="userassets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="userassets/css/LineIcons.3.0.css" />
+    <link rel="stylesheet" href="userassets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="userassets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="userassets/css/main.css" />
+</head>
+
+<body>
+    
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+  {{> header}}
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="breadcrumbs-content">
+                        <h1 class="page-title">Registration</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <ul class="breadcrumb-nav">
+                        <li><a href="index-2.html"><i class="lni lni-home"></i> Home</a></li>
+                        <li>Registration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="account-login section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-12">
+                    <div class="register-form">
+                        <div class="title">
+                            <h3>No Account? Register</h3>
+                            <h6 style="color:red">{{message}}</h6>
+                        </div>
+                        {{!-- from which route in which we are calling the post is what indicated by action--}}
+                       
+                    
+                       
+                        <form class="row" action="/register" method="post" enctype="application/x-www-form-urlencoded">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="reg-fn">First Name</label>
+                                    <input class="form-control" type="text" name="fname" id="reg-fn" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="reg-ln">Last Name</label>
+                                    <input class="form-control" type="text" name="lname" id="reg-ln" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="reg-email">E-mail Address</label>
+                                    <input class="form-control" type="email" name="email" id="reg-email" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="reg-phone">Phone Number</label>
+                                    <input class="form-control" type="text" name="mobile" id="reg-phone" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="reg-pass">Password</label>
+                                    <input class="form-control" type="password" name="pass" id="reg-pass" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="reg-pass-confirm">Confirm Password</label>
+                                    <input class="form-control" type="password" name="repass" id="reg-pass-confirm" required>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <button class="btn" type="submit">Register</button>
+                            </div>
+                            <p class="outer-link">Already have an account? <a href="/login">Login Now</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{{> footer}}
+
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <script data-cfasync="false"
+        src="https://demo.graygrids.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="userassets/js/bootstrap.min.js"></script>
+    <script src="userassets/js/tiny-slider.js"></script>
+    <script src="userassets/js/glightbox.min.js"></script>
+    <script src="userassets/js/main.js"></script>
+</body>
+
+</html>
